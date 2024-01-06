@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DimondGame</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sorry_text">Sorry</string>
+    <string name="settings_sorry_discription_text">There are no settings in the terms of reference.</string>
+    <string name="privacy_policy_sorry_discription_text">Privacy policy is not in the terms of reference.</string>
+    <string name="double_rewaard">Double Rewaard</string>
+</resources>

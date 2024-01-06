@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MenuFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_icon"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="150dp"
+        app:cardBackgroundColor="@color/blue"
+        app:cardCornerRadius="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/money_icon">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher_foreground"
+            app:layout_constraintBottom_toBottomOf="@id/card_icon"
+            app:layout_constraintEnd_toEndOf="@id/card_icon"
+            app:layout_constraintStart_toStartOf="@id/card_icon"
+            app:layout_constraintTop_toTopOf="@id/card_icon" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/money_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/money_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/money_icon" />
+
+    <ImageView
+        android:id="@+id/money_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="26dp"
+        android:src="@drawable/money"
+        app:layout_constraintEnd_toStartOf="@+id/money_text_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:textSize="32sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="PLAY"
+        app:layout_constraintEnd_toEndOf="@+id/card_icon"
+        app:layout_constraintStart_toStartOf="@+id/card_icon"
+        app:layout_constraintTop_toBottomOf="@+id/card_icon" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/private_card"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginEnd="26dp"
+        app:cardBackgroundColor="@color/blue"
+        app:cardCornerRadius="5dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/play_button">
+
+        <ImageView
+            android:id="@+id/private_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp"
+            android:src="@drawable/private_policy"
+            app:layout_constraintBottom_toBottomOf="@id/private_card"
+            app:layout_constraintEnd_toEndOf="@id/private_card"
+            app:layout_constraintStart_toStartOf="@id/private_card"
+            app:layout_constraintTop_toTopOf="@id/private_card" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/setting_card"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="26dp"
+        app:cardBackgroundColor="@color/blue"
+        app:cardCornerRadius="5dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/private_card"
+        app:layout_constraintEnd_toStartOf="@+id/private_card"
+        app:layout_constraintTop_toTopOf="@+id/private_card">
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/setting"
+            android:layout_margin="7dp"
+            app:layout_constraintBottom_toBottomOf="@id/setting_card"
+            app:layout_constraintEnd_toEndOf="@id/setting_card"
+            app:layout_constraintStart_toStartOf="@id/setting_card"
+            app:layout_constraintTop_toTopOf="@id/setting_card" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
